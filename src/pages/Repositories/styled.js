@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
     width: 100%;
     max-width: 991px;
-    margin: 0 auto;
+    margin: 2rem auto;
 `
 
 export const Title = styled.h2`
     text-align: center;
+    margin-bottom: 2rem;
     font-size: 2rem;
     font-family: sans-serif;
     color: #333;
@@ -19,6 +20,7 @@ export const List = styled.ul`
     font-family: sans-serif;
 `
 export const ListItem = styled.li`
+    text-align: center;
     margin: .5rem 0;
     background: #000;
     color: #fff;

@@ -10,6 +10,7 @@ export const HomeContainer = styled.div`
 
 export const Title = styled.h2`
   display: flex;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 42px;
   font-family: sans-serif;

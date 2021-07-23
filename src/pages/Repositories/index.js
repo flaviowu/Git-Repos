@@ -6,9 +6,11 @@ import { useHistory } from 'react-router-dom';
 export default function Repositories() {
   const history = useHistory();
   const [ repositories, setRepositories ] = useState([]);
+  const [ userName, setUserName ] = useState();
 
     useEffect(() => {
       let repositoriesName = localStorage.getItem('repositoriesName');
+      setUserName(localStorage.getItem('userName'))
       if(repositoriesName !== null) {
         repositoriesName = JSON.parse(repositoriesName);
         setRepositories(repositoriesName);
@@ -20,7 +22,7 @@ export default function Repositories() {
 
     return (
       <S.Container>
-        <S.Title>Repositórios</S.Title>
+        <S.Title>Repositórios do usuário {userName}</S.Title>
         <S.List>
           { repositories.map(repository => {
             return (

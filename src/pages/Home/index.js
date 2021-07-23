@@ -19,6 +19,7 @@ function App(props) {
           repositoriesName.push(repository.name);
         });
         localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
+        localStorage.setItem('userName', JSON.stringify(usuario));
         setErro(false);
         history.push('/repositories');
       })
