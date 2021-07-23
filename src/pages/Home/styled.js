@@ -5,17 +5,18 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
 `;
 
 export const Title = styled.h2`
-  display: block;
+  display: flex;
   text-align: center;
+  font-size: 42px;
   font-family: sans-serif;
 `;
 
 export const Content = styled.div`
-  width: 100vw;
+  width: 90vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +24,7 @@ export const Content = styled.div`
 
 export const Input = styled.input`
   border: 1px solid #ddd;
-  height: 1.5rem;
+  height: 2.5rem;
   padding: 0 .5rem;
   border-radius: .25rem 0 0 .25rem;
   &:focus,
@@ -34,7 +35,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  height: 1.5rem;
+  height: 2.6rem;
   border: 1px solid #000;
   background: #000;
   color: #fff;

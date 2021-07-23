@@ -1,6 +1,10 @@
+html {
+  margin: 0;
+  padding: 1rem;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
   width: 100%;
 }
